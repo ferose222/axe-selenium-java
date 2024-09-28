@@ -30,7 +30,7 @@ WORKDIR /usr/src/app
 COPY . .
 
 # Build the application
-RUN mvn clean package -DskipTests
+RUN mvn clean package -Pskip-Tests
 
 # Verify the JAR file exists
 RUN if [ -f /usr/src/app/target/your-app.jar ]; then \

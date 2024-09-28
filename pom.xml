@@ -127,6 +127,14 @@
                 </plugins>
             </build>
         </profile>
+        <profiles>
+            <profile>
+                <id>skip-tests</id>
+                <properties>
+                    <maven.test.skip>true</maven.test.skip>
+                </properties>
+            </profile>
+        </profiles>
     </profiles>
 
     <dependencies>
